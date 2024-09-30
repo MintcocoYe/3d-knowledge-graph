@@ -1373,7 +1373,12 @@
         return sprite;
       });
 
-
+        // Handle click event for nodes in group 1 (datasets)
+    Graph.onNodeClick(node => {
+      if (node.group === 1 && node.url) {
+        window.open(node.url, '_blank');  // Open the URL in a new tab
+      }
+    });
     
     // Strengthen the connections and bring nodes closer
     Graph.d3Force('charge').strength(-50);  // Smaller negative charge for closer nodes
