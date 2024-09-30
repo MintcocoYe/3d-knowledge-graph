@@ -25,7 +25,7 @@
     const gData = {
       "nodes": [
         // First-Level Nodes (Datasets)
-     {'id': 'American Community Survey', 'group': 1},
+     {'id': 'American Community Survey', 'group': 1, 'url': 'https://www.researchdatagov.org/product/691'},
  {'id': 'Housing Affordability', 'group': 3},
  {'id': 'AHINC', 'group': 2},
  {'id': 'FINC', 'group': 2},
@@ -75,7 +75,7 @@
  {'id': 'SRNT', 'group': 2},
  {'id': 'Residential Finance Survey (RFS)', 'group': 3},
  {'id': 'MRGI', 'group': 2},
- {'id': 'American Housing Survey', 'group': 1},
+ {'id': 'American Housing Survey', 'group': 1, 'url': 'https://www.researchdatagov.org/product/643'},
  {'id': 'AMI', 'group': 2},
  {'id': 'FS', 'group': 2},
  {'id': 'FSAFFORD', 'group': 2},
@@ -124,7 +124,7 @@
  {'id': 'INSURAMT', 'group': 2},
  {'id': 'DWNPAYPCT', 'group': 2},
  {'id': 'DWNPAYSRC', 'group': 2},
- {'id': 'IPUMS 1940 Research', 'group': 1},
+ {'id': 'IPUMS 1940 Research', 'group': 1, 'url': 'https://www.researchdatagov.org/product/832'},
  {'id': 'VALUEH', 'group': 2},
  {'id': 'US1940B_0081', 'group': 2},
  {'id': 'US1940B_0082', 'group': 2},
@@ -177,7 +177,7 @@
  {'id': 'FSVAL', 'group': 2},
  {'id': 'FSSEVAL', 'group': 2},
  {'id': 'FVETVAL', 'group': 2},
- {'id': 'Decennial Census', 'group': 1},
+ {'id': 'Decennial Census', 'group': 1, 'url': 'https://www.researchdatagov.org/product/690'},
  {'id': 'HOUSING', 'group': 2},
  {'id': 'FVACS', 'group': 2},
  {'id': 'CURCOUNTY', 'group': 2},
@@ -206,7 +206,7 @@
  {'id': 'AREAWATERINLD', 'group': 2},
  {'id': 'AREAWATERTSEA', 'group': 2},
  {'id': 'TTRACTCE', 'group': 2},
- {'id': 'HUD Family Option Study', 'group': 1},
+ {'id': 'HUD Family Option Study', 'group': 1, 'url': 'https://www.researchdatagov.org/product/690},
  {'id': 'p78_A5', 'group': 2},
  {'id': 'p78_A6', 'group': 2},
  {'id': 'p78_A6B', 'group': 2},
@@ -223,7 +223,7 @@
  {'id': 'p78_A3f', 'group': 2},
  {'id': 'p78_A3e', 'group': 2},
  {'id': 'p78_A4A3', 'group': 2},
- {'id': 'HUD Move to Opportunity', 'group': 1},
+ {'id': 'HUD Move to Opportunity', 'group': 1, 'url': 'https://www.researchdatagov.org/product/822'},
  {'id': 'addressid', 'group': 2},
  {'id': 'any_hopevi', 'group': 2},
  {'id': 'development_number1', 'group': 2},
@@ -1373,6 +1373,14 @@
         return sprite;
       });
 
+        // Handle click event for nodes in group 1 (datasets)
+    Graph.onNodeClick(node => {
+      if (node.group === 1 && node.url) {
+        window.open(node.url, '_blank');  // Open the URL in a new tab
+      }
+    });
+
+    
     // Strengthen the connections and bring nodes closer
     Graph.d3Force('charge').strength(-50);  // Smaller negative charge for closer nodes
     Graph.d3Force('link').distance(50);     // Reduce link distance to bring nodes together
