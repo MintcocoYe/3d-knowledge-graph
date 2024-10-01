@@ -182,6 +182,40 @@
  {'id': 'dwellid', 'group': 3},
  {'id': 'demo', 'group': 3},
  {'id': 'picdemo', 'group': 3},
+ {'id': 'Census of Construction Industries', 'group': 2, 'url': 'https://www.researchdatagov.org/product/604'},
+ {'id': 'HSESALD', 'group': 3},
+{'id': 'HSESASL', 'group': 3},
+{'id': 'HSESDLD', 'group': 3},
+{'id': 'HSESDSL', 'group': 3},
+{'id': 'ACTYFIPS', 'group': 3},
+{'id': 'APLCEFIPS', 'group': 3},
+{'id': 'GEOREG', 'group': 3},
+{'id': 'GEOSUMRY', 'group': 3},
+{'id': 'GEO_COMP', 'group': 3},
+{'id': 'HSENR', 'group': 3},
+{'id': 'HSENR_F', 'group': 3},
+{'id': 'HSENR_EI', 'group': 3},
+{'id': 'VACINHER', 'group': 3},
+{'id': 'VACOTH', 'group': 3},
+{'id': 'VACS', 'group': 3},
+{'id': 'XTEN', 'group': 3},
+{'id': 'TEN_R', 'group': 3},
+{'id': 'CSTLAND', 'group': 3},
+{'id': 'CEXTOT', 'group': 3},
+{'id': 'HSECB', 'group': 3},
+{'id': 'HSEMBLD', 'group': 3},
+{'id': 'HSEMUNT', 'group': 3},
+{'id': 'HSENR_F', 'group': 3},
+{'id': 'RPBLD', 'group': 3},
+{'id': 'RPMCH', 'group': 3},
+{'id': 'RPTOT', 'group': 3},
+{'id': 'RENTCNTRL', 'group': 3},
+{'id': 'RENTSUB', 'group': 3},
+{'id': 'PAYANN', 'group': 3},
+{'id': 'PAYQTR1', 'group': 3},
+{'id': 'PAYQTR2', 'group': 3},
+{'id': 'PAYQTR3', 'group': 3},
+{'id': 'PAYQTR4', 'group': 3}
       ],
       "links": [
         // Links from Datasets to Codes
@@ -716,7 +750,79 @@
  {'source': 'New Residential Construction', 'target': 'demo', 'value': 1},
  {'source': 'HUD Move to Opportunity', 'target': 'picdemo', 'value': 1},
  {'source': 'New Residential Construction', 'target': 'picdemo', 'value': 1},
-      
+ {'source': 'Census of Construction Industries', 'target': 'Housing Affordability', 'value': 1},
+{'source': 'Census of Construction Industries', 'target': 'HSESALD', 'value': 1},
+{'source': 'Housing Affordability', 'target': 'HSESALD', 'value': 1},
+{'source': 'Census of Construction Industries', 'target': 'HSESASL', 'value': 1},
+{'source': 'Housing Affordability', 'target': 'HSESASL', 'value': 1},
+{'source': 'Census of Construction Industries', 'target': 'HSESDLD', 'value': 1},
+{'source': 'Housing Affordability', 'target': 'HSESDLD', 'value': 1},
+{'source': 'Census of Construction Industries', 'target': 'HSESDSL', 'value': 1},
+{'source': 'Housing Affordability', 'target': 'HSESDSL', 'value': 1},
+
+{'source': 'Census of Construction Industries', 'target': 'Housing Patterns', 'value': 1},
+{'source': 'Census of Construction Industries', 'target': 'ACTYFIPS', 'value': 1},
+{'source': 'Housing Patterns', 'target': 'ACTYFIPS', 'value': 1},
+{'source': 'Census of Construction Industries', 'target': 'APLCEFIPS', 'value': 1},
+{'source': 'Housing Patterns', 'target': 'APLCEFIPS', 'value': 1},
+{'source': 'Census of Construction Industries', 'target': 'GEOREG', 'value': 1},
+{'source': 'Housing Patterns', 'target': 'GEOREG', 'value': 1},
+{'source': 'Census of Construction Industries', 'target': 'GEOSUMRY', 'value': 1},
+{'source': 'Housing Patterns', 'target': 'GEOSUMRY', 'value': 1},
+{'source': 'Census of Construction Industries', 'target': 'GEO_COMP', 'value': 1},
+{'source': 'Housing Patterns', 'target': 'GEO_COMP', 'value': 1},
+{'source': 'Census of Construction Industries', 'target': 'HSENR', 'value': 1},
+{'source': 'Housing Patterns', 'target': 'HSENR', 'value': 1},
+
+{'source': 'Census of Construction Industries', 'target': 'Housing Vacancies and Homeownership', 'value': 1},
+{'source': 'Census of Construction Industries', 'target': 'VACINHER', 'value': 1},
+{'source': 'Housing Vacancies and Homeownership', 'target': 'VACINHER', 'value': 1},
+{'source': 'Census of Construction Industries', 'target': 'VACOTH', 'value': 1},
+{'source': 'Housing Vacancies and Homeownership', 'target': 'VACOTH', 'value': 1},
+{'source': 'Census of Construction Industries', 'target': 'VACS', 'value': 1},
+{'source': 'Housing Vacancies and Homeownership', 'target': 'VACS', 'value': 1},
+{'source': 'Census of Construction Industries', 'target': 'XTEN', 'value': 1},
+{'source': 'Housing Vacancies and Homeownership', 'target': 'XTEN', 'value': 1},
+{'source': 'Census of Construction Industries', 'target': 'TEN_R', 'value': 1},
+{'source': 'Housing Vacancies and Homeownership', 'target': 'TEN_R', 'value': 1},
+
+{'source': 'Census of Construction Industries', 'target': 'New Residential Construction', 'value': 1},
+{'source': 'Census of Construction Industries', 'target': 'CSTLAND', 'value': 1},
+{'source': 'New Residential Construction', 'target': 'CSTLAND', 'value': 1},
+{'source': 'Census of Construction Industries', 'target': 'CEXTOT', 'value': 1},
+{'source': 'New Residential Construction', 'target': 'CEXTOT', 'value': 1},
+{'source': 'Census of Construction Industries', 'target': 'HSECB', 'value': 1},
+{'source': 'New Residential Construction', 'target': 'HSECB', 'value': 1},
+{'source': 'Census of Construction Industries', 'target': 'HSEMBLD', 'value': 1},
+{'source': 'New Residential Construction', 'target': 'HSEMBLD', 'value': 1},
+{'source': 'Census of Construction Industries', 'target': 'HSEMUNT', 'value': 1},
+{'source': 'New Residential Construction', 'target': 'HSEMUNT', 'value': 1},
+{'source': 'Census of Construction Industries', 'target': 'HSENR_F', 'value': 1},
+{'source': 'New Residential Construction', 'target': 'HSENR_F', 'value': 1},
+
+{'source': 'Census of Construction Industries', 'target': 'Rental Housing Finance Survey (RHFS)', 'value': 1},
+{'source': 'Census of Construction Industries', 'target': 'RPBLD', 'value': 1},
+{'source': 'Rental Housing Finance Survey (RHFS)', 'target': 'RPBLD', 'value': 1},
+{'source': 'Census of Construction Industries', 'target': 'RPMCH', 'value': 1},
+{'source': 'Rental Housing Finance Survey (RHFS)', 'target': 'RPMCH', 'value': 1},
+{'source': 'Census of Construction Industries', 'target': 'RPTOT', 'value': 1},
+{'source': 'Rental Housing Finance Survey (RHFS)', 'target': 'RPTOT', 'value': 1},
+{'source': 'Census of Construction Industries', 'target': 'RENTCNTRL', 'value': 1},
+{'source': 'Rental Housing Finance Survey (RHFS)', 'target': 'RENTCNTRL', 'value': 1},
+{'source': 'Census of Construction Industries', 'target': 'RENTSUB', 'value': 1},
+{'source': 'Rental Housing Finance Survey (RHFS)', 'target': 'RENTSUB', 'value': 1},
+
+{'source': 'Census of Construction Industries', 'target': 'Residential Finance Survey (RFS)', 'value': 1},
+{'source': 'Census of Construction Industries', 'target': 'PAYANN', 'value': 1},
+{'source': 'Residential Finance Survey (RFS)', 'target': 'PAYANN', 'value': 1},
+{'source': 'Census of Construction Industries', 'target': 'PAYQTR1', 'value': 1},
+{'source': 'Residential Finance Survey (RFS)', 'target': 'PAYQTR1', 'value': 1},
+{'source': 'Census of Construction Industries', 'target': 'PAYQTR2', 'value': 1},
+{'source': 'Residential Finance Survey (RFS)', 'target': 'PAYQTR2', 'value': 1},
+{'source': 'Census of Construction Industries', 'target': 'PAYQTR3', 'value': 1},
+{'source': 'Residential Finance Survey (RFS)', 'target': 'PAYQTR3', 'value': 1},
+{'source': 'Census of Construction Industries', 'target': 'PAYQTR4', 'value': 1},
+{'source': 'Residential Finance Survey (RFS)', 'target': 'PAYQTR4', 'value': 1}
       ]
     };
 
@@ -731,12 +837,12 @@
         return sprite;
       });
 
-        // Handle click event for nodes in group 1 (datasets)
-    Graph.onNodeClick(node => {
-      if (node.group === 1 && node.url) {
-        window.open(node.url, '_blank');  // Open the URL in a new tab
-      }
-    });
+        // Handle click event for nodes in group 1 and 2 (datasets)
+Graph.onNodeClick(node => {
+  if ((node.group === 1 || node.group === 2) && node.url) {
+    window.open(node.url, '_blank');  // Open the URL in a new tab
+  }
+});
     
     // Strengthen the connections and bring nodes closer
     Graph.d3Force('charge').strength(-50);  // Smaller negative charge for closer nodes
